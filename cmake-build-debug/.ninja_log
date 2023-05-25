@@ -1,0 +1,77 @@
+# ninja log v5
+5	36	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	36	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+2507	2884	7064122010064121	task4_cpp.exe	2cc9a226e4d32257
+36	1821	7057657730194178	CMakeFiles/task4_cpp.dir/main.cpp.obj	dbf16f0aebcb415c
+5	36	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	36	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+471	2246	7058015384617667	CMakeFiles/task4_cpp.dir/task4_cpp_autogen/mocs_compilation.cpp.obj	3757352cac7169f2
+400	2333	7057659268192686	CMakeFiles/task4_cpp.dir/task4_cpp/mainwindow.cpp.obj	ff8ba6d90d6fd03d
+4	477	0	task4_cpp_autogen/include/ui_mainframe.h	b00e14a7a5d17488
+4	477	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/include/ui_mainframe.h	b00e14a7a5d17488
+482	2418	7057649105899554	CMakeFiles/task4_cpp.dir/mainframe.cpp.obj	ae09e531e7f3faf7
+49	2112	7058863272838009	CMakeFiles/task4_cpp.dir/task4_cpp/gui/mainwindow.cpp.obj	886560feb91655f5
+2	339	7066769957994837	build.ninja	9cb11516d0d91733
+421	2382	7057656722993165	CMakeFiles/task4_cpp.dir/mainwindow.cpp.obj	41babfbd9bfa67d0
+47	2507	7064122007924427	CMakeFiles/task4_cpp.dir/task4_cpp/main.cpp.obj	174e87bd76588cd9
+5	515	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	515	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	515	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	515	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+521	1947	7066790314783059	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+515	2574	7066790321073034	CMakeFiles/task4_cpp.dir/task4_cpp_autogen/mocs_compilation.cpp.obj	3757352cac7169f2
+533	2859	7066790323923028	CMakeFiles/task4_cpp.dir/task4_cpp/main.cpp.obj	174e87bd76588cd9
+527	2928	7066790324613355	CMakeFiles/task4_cpp.dir/task4_cpp/gui/mainwindow.cpp.obj	886560feb91655f5
+2928	3413	7066790327403359	task4_cpp.exe	b316e7a1e5f37531
+4	42	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+4	42	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+4	42	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+4	42	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	44	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	44	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	44	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	44	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+44	1161	7066792628509628	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+1162	1574	7066792630809604	task4_cpp.exe	b316e7a1e5f37531
+4	44	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+4	44	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+4	44	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+4	44	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+44	1164	7066793045293510	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+1165	1583	7066793047613194	task4_cpp.exe	b316e7a1e5f37531
+5	46	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	46	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	46	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	46	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+46	1171	7066793612884831	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+1171	1580	7066793615135132	task4_cpp.exe	b316e7a1e5f37531
+5	55	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	55	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	55	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	55	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+61	1396	7066798728782625	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+4	46	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+4	46	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+4	46	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+4	46	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+52	1393	7066798985221444	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+5	54	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	54	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	54	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	54	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+61	1385	7066799147035470	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+5	47	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	47	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	47	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	47	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+52	1348	7066799284880868	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+5	42	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	42	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	42	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	42	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+42	1240	7066799473007626	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2
+5	46	0	CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	46	0	task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+5	46	0	D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen	b00e14a7a5d17488
+5	46	0	D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/mocs_compilation.cpp	b00e14a7a5d17488
+51	1480	7066799826891234	CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj	b19731bcfa004ab2

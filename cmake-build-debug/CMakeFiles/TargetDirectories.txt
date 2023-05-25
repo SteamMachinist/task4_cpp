@@ -1,0 +1,4 @@
+D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp.dir
+D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/c++ projects/task4_cpp/cmake-build-debug/CMakeFiles/task4_cpp_autogen.dir
