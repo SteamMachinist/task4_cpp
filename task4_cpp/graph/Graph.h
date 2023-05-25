@@ -14,15 +14,15 @@ class Graph
 {
 private:
     int verticesNumber;
-    vector<T> vertices;
     map<T, set<T>> adjacency;
 
     void addOneEdge(T i, T j);
     void removeOneEdge(T i, T j);
-    void findNextNewVertex(T current, map<T, set<T>> spanningMap);
+
+    void addAbsent(T current, map<T, set<T>> spanning);
 
 public:
-    Graph(list<T> vertices, map<T, set<T>> adjacency);
+    Graph(map<T, set<T>> adjacency);
     Graph(list<T> vertices, list<list<T>> adjacencyList);
     Graph(list<T> vertices);
     ~Graph();
@@ -33,13 +33,14 @@ public:
     Graph<T> getSpanningTree();
 };
 
+
+
 template<typename T>
-Graph<T>::Graph(list<T> vertices, map<T, set<T>> adjacency) : verticesNumber(adjacency.size()), vertices(vertices),
-    adjacency(adjacency)
+Graph<T>::Graph(map<T, set<T>> adjacency) : verticesNumber(adjacency.size()), adjacency(adjacency)
 {}
 
 template<typename T>
-Graph<T>::Graph(list<T> vertices, list<list<T>> adjacencyList) : verticesNumber(vertices.size()), vertices(vertices)
+Graph<T>::Graph(list<T> vertices, list<list<T>> adjacencyList) : verticesNumber(vertices.size())
 {
     adjacency = *new map<T, set<T>>;
     for (int i = 0; i < verticesNumber; i++)
@@ -52,7 +53,7 @@ Graph<T>::Graph(list<T> vertices, list<list<T>> adjacencyList) : verticesNumber(
 }
 
 template<typename T>
-Graph<T>::Graph(list<T> vertices) : verticesNumber(vertices.size()), vertices(vertices)
+Graph<T>::Graph(list<T> vertices) : verticesNumber(vertices.size())
 {
     adjacency = *new map<T, set<T>>;
     for (T v: vertices)
@@ -64,7 +65,6 @@ Graph<T>::Graph(list<T> vertices) : verticesNumber(vertices.size()), vertices(ve
 template<typename T>
 Graph<T>::~Graph()
 {
-    //delete vertices;
     //delete adjacency;
 }
 
@@ -119,45 +119,15 @@ Graph<T> Graph<T>::getSpanningTree()
     {
         return *new Graph<T>(*new list<T>());
     }
-
-    map<T, set<T>> spanningMap = *new map<T, set<T>>();
-    T current = vertices[0];
-    for (int i = 1; i < verticesNumber; i++)
-    {
-        if (spanningMap.contains(current))
-        {
-            current = vertices[i];
-            continue;
-        }
-        set<T> adjacent = adjacency[current];
-        if (adjacent.empty())
-        {
-            current = vertices[i];
-            continue;
-        }
-        else
-        {
-            for (T vertex: adjacent)
-            {
-                if (!spanningMap.contains(vertex))
-                {
-                    spanningMap[current] = new set{vertex};
-                    spanningMap[vertex] = new set{current};
-                    current = vertex;
-                    continue;
-                }
-            }
-            current = vertices[i];
-        }
-    }
-
-    return new Graph<T>(vertices, spanningMap);
+    map<T, set<T>> spanning = *new map<T, set<T>>();
+    T root = adjacency.begin()->first;
+    //for
+    return *new Graph<T>(spanning);
 }
 
 template<typename T>
-void Graph<T>::findNextNewVertex(T current, map<T, set<T>> spanningMap)
+void Graph<T>::addAbsent(T current, map<T, set<T>> spanning)
 {
 
 }
-
 #endif //GRAPH_H

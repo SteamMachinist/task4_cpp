@@ -6,7 +6,6 @@ Graph<string> FileUtils::graphFromFile(string filename)
     string line;
     ifstream file("../resources/" + filename);
     map<string, set<string>> graph = *new map<string, set<string>>();
-    list<string> vertices = *new list<string>();
     if (file.is_open())
     {
         getline(file, line);
@@ -14,7 +13,6 @@ Graph<string> FileUtils::graphFromFile(string filename)
         while (getline(file, line))
         {
             string vertex = line.substr(0, line.find(':'));
-            vertices.push_back(vertex);
             line = line.erase(0, line.find(':') + 1);
 
             set<string> adjacent = *new set<string>;
@@ -31,5 +29,5 @@ Graph<string> FileUtils::graphFromFile(string filename)
     }
     else cout << "Unable to open file";
 
-    return *new Graph<string>(vertices, graph);
+    return *new Graph<string>(graph);
 }
