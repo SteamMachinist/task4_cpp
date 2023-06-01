@@ -19,6 +19,8 @@ public:
 
 protected:
     void focusInEvent(QFocusEvent *event) override;
+    void drawGraph(QMap<QString, QPointF> positions);
+    QMap<QString, QPointF> getRandomPositions();
 
 public:
     QGraphicsScene *scene;

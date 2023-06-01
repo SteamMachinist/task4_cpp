@@ -22,6 +22,7 @@ private:
     void addSpanningFor(T current, map<T, set<T>> &spanning);
 
     friend class GraphUtils;
+    friend class GraphWindow;
 
 public:
     Graph(map<T, set<T>> adjacency);

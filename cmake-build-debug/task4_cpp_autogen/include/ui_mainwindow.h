@@ -12,7 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMdiArea>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
@@ -29,6 +31,8 @@ public:
     QAction *actionHelp;
     QAction *actionSave_As;
     QWidget *centralwidget;
+    QGridLayout *gridLayout;
+    QMdiArea *mdiArea;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuProcessing;
@@ -50,6 +54,13 @@ public:
         actionSave_As->setObjectName(QString::fromUtf8("actionSave_As"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        gridLayout = new QGridLayout(centralwidget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        mdiArea = new QMdiArea(centralwidget);
+        mdiArea->setObjectName(QString::fromUtf8("mdiArea"));
+
+        gridLayout->addWidget(mdiArea, 0, 0, 1, 1);
+
         MainWindow->setCentralWidget(centralwidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));

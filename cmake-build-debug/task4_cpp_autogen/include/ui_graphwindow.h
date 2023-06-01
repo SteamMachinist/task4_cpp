@@ -51,6 +51,8 @@ public:
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setFrameShape(QFrame::NoFrame);
         graphicsView->setFrameShadow(QFrame::Plain);
+        graphicsView->setDragMode(QGraphicsView::ScrollHandDrag);
+        graphicsView->setResizeAnchor(QGraphicsView::AnchorUnderMouse);
 
         horizontalLayout->addWidget(graphicsView);
 

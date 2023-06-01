@@ -32,6 +32,7 @@ void MainWindow::open()
     Graph<string> graph = GraphUtils::graphFromFile(filename.toStdString());
     GraphWindow *graphWindow = new GraphWindow(this, filename, graph);
     currentGraphWindow = graphWindow;
+    ui->mdiArea->addSubWindow(graphWindow);
     graphWindow->show();
 }
 
