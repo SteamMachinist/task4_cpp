@@ -3,19 +3,19 @@
 #include <iostream>
 #include "gui/mainwindow.h"
 #include "graph/Graph.h"
-#include "utils/FileUtils.h"
+#include "graph/GraphUtils.h"
 
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-//    QApplication a(argc, argv);
-//    MainWindow *mainwindow = new MainWindow();
-//    mainwindow->show();
-//    return QApplication::exec();
+    QApplication a(argc, argv);
+    MainWindow *mainwindow = new MainWindow();
+    mainwindow->show();
+    return QApplication::exec();
 
-    FileUtils fileUtils;
-    Graph<string> graph = fileUtils.graphFromFile("graph1.txt");
-    Graph<string> graph2 = graph.getSpanningTree();
-    cout << "a";
+//    Graph<string> graph = GraphUtils::graphFromFile(R"(D:\c++ projects\task4_cpp\files\graph1.txt)");
+//    Graph<string> graph2 = graph.getSpanningTree();
+//    cout << GraphUtils::graphToString(graph) << endl;
+//    cout << GraphUtils::graphToString(graph2);
 }

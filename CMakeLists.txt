@@ -14,7 +14,7 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(task4_cpp task4_cpp/main.cpp task4_cpp/gui/mainwindow.cpp task4_cpp/gui/mainwindow.h task4_cpp/graph/Graph.h task4_cpp/utils/FileUtils.cpp task4_cpp/utils/FileUtils.h)
+add_executable(task4_cpp task4_cpp/main.cpp task4_cpp/gui/mainwindow.cpp task4_cpp/gui/mainwindow.h task4_cpp/graph/Graph.h task4_cpp/graph/GraphUtils.cpp task4_cpp/graph/GraphUtils.h task4_cpp/gui/graphwindow.cpp)
 target_link_libraries(task4_cpp
         Qt5::Core
         Qt5::Gui

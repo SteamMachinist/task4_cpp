@@ -73,13 +73,21 @@ build CMakeFiles/task4_cpp.dir/task4_cpp/gui/mainwindow.cpp.obj: CXX_COMPILER__t
   OBJECT_DIR = CMakeFiles\task4_cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\task4_cpp.dir\task4_cpp\gui
 
-build CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj: CXX_COMPILER__task4_cpp_Debug D$:/c++$ projects/task4_cpp/task4_cpp/utils/FileUtils.cpp || cmake_object_order_depends_target_task4_cpp
+build CMakeFiles/task4_cpp.dir/task4_cpp/graph/GraphUtils.cpp.obj: CXX_COMPILER__task4_cpp_Debug D$:/c++$ projects/task4_cpp/task4_cpp/graph/GraphUtils.cpp || cmake_object_order_depends_target_task4_cpp
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles\task4_cpp.dir\task4_cpp\utils\FileUtils.cpp.obj.d
+  DEP_FILE = CMakeFiles\task4_cpp.dir\task4_cpp\graph\GraphUtils.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++23
   INCLUDES = -I"D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/include" -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/./mkspecs/win32-g++ -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtANGLE -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\task4_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\task4_cpp.dir\task4_cpp\utils
+  OBJECT_FILE_DIR = CMakeFiles\task4_cpp.dir\task4_cpp\graph
+
+build CMakeFiles/task4_cpp.dir/task4_cpp/gui/graphwindow.cpp.obj: CXX_COMPILER__task4_cpp_Debug D$:/c++$ projects/task4_cpp/task4_cpp/gui/graphwindow.cpp || cmake_object_order_depends_target_task4_cpp
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\task4_cpp.dir\task4_cpp\gui\graphwindow.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++23
+  INCLUDES = -I"D:/c++ projects/task4_cpp/cmake-build-debug/task4_cpp_autogen/include" -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/./mkspecs/win32-g++ -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtANGLE -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\task4_cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\task4_cpp.dir\task4_cpp\gui
 
 
 # =============================================================================
@@ -89,7 +97,7 @@ build CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable task4_cpp.exe
 
-build task4_cpp.exe: CXX_EXECUTABLE_LINKER__task4_cpp_Debug CMakeFiles/task4_cpp.dir/task4_cpp_autogen/mocs_compilation.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/main.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/gui/mainwindow.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/utils/FileUtils.cpp.obj | C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a || task4_cpp_autogen
+build task4_cpp.exe: CXX_EXECUTABLE_LINKER__task4_cpp_Debug CMakeFiles/task4_cpp.dir/task4_cpp_autogen/mocs_compilation.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/main.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/gui/mainwindow.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/graph/GraphUtils.cpp.obj CMakeFiles/task4_cpp.dir/task4_cpp/gui/graphwindow.cpp.obj | C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a || task4_cpp_autogen
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task4_cpp.dir

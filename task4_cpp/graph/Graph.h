@@ -19,7 +19,9 @@ private:
     void addOneEdge(T i, T j);
     void removeOneEdge(T i, T j);
 
-    void addAbsent(T current, map<T, set<T>> spanning);
+    void addSpanningFor(T current, map<T, set<T>> &spanning);
+
+    friend class GraphUtils;
 
 public:
     Graph(map<T, set<T>> adjacency);
@@ -27,13 +29,16 @@ public:
     Graph(list<T> vertices);
     ~Graph();
 
+    int size();
+
+    void addVertex(T v);
+    void removeVertex(T v);
+
     void addEdge(T i, T j);
     void removeEdge(T i, T j);
 
     Graph<T> getSpanningTree();
 };
-
-
 
 template<typename T>
 Graph<T>::Graph(map<T, set<T>> adjacency) : verticesNumber(adjacency.size()), adjacency(adjacency)
@@ -66,6 +71,30 @@ template<typename T>
 Graph<T>::~Graph()
 {
     //delete adjacency;
+}
+
+template<typename T>
+int Graph<T>::size()
+{
+    return verticesNumber;
+}
+
+template<typename T>
+void Graph<T>::addVertex(T v)
+{
+    adjacency[v] = new set<T>;
+    verticesNumber++;
+}
+
+template<typename T>
+void Graph<T>::removeVertex(T v)
+{
+    adjacency.erase(v);
+    for (auto const& [key, val] : adjacency)
+    {
+        val.erase(v);
+    }
+    verticesNumber--;
 }
 
 template<typename T>
@@ -121,13 +150,29 @@ Graph<T> Graph<T>::getSpanningTree()
     }
     map<T, set<T>> spanning = *new map<T, set<T>>();
     T root = adjacency.begin()->first;
-    //for
+    addSpanningFor(root, spanning);
     return *new Graph<T>(spanning);
 }
 
 template<typename T>
-void Graph<T>::addAbsent(T current, map<T, set<T>> spanning)
+void Graph<T>::addSpanningFor(T current, map<T, set<T>> &spanning)
 {
-
+    set<T> adjacent = adjacency[current];
+    for (T vertex: adjacent)
+    {
+        if (!spanning.contains(vertex))
+        {
+            spanning[vertex] = *new set<T>{current};
+            if (spanning.contains(current))
+            {
+                spanning[current].insert(vertex);
+            }
+            else
+            {
+                spanning[current] = *new set<T>{vertex};
+            }
+            addSpanningFor(vertex, spanning);
+        }
+    }
 }
 #endif //GRAPH_H
